@@ -28,11 +28,6 @@ output "ec2_key_name" {
   value       = var.ec2_key_name
 }
 
-output "bigip_nic_info" {
-  description = "detailed information about the public nics on the bigips "
-  value = data.aws_network_interface.bar
-}
-
 output "juiceshop_ip" {
   value = aws_eip.juiceshop[*].public_ip
 }

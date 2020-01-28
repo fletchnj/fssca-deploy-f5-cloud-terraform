@@ -5,7 +5,10 @@ variable "SecretAccessKey" {}
 variable "prefix" {
   default = "tf-aws-bigip"
 }
+## Europe Regions need oder Jumphost and BigIP Instance Typs1
+## Uncomment needed region below
 
+# US (Oregon)
 variable "region" {
   default = "us-east-1"
 }
@@ -13,6 +16,29 @@ variable "region" {
 variable "azs" {
   default = ["us-east-1a", "us-east-1b"]
 }
+
+variable "ec2_bigip_type" {
+  default = "c4.xlarge"
+}
+variable "ec2_ubuntu_type" {
+  default = "t2.xlarge"
+}
+
+## Europe (Stockholm)
+# variable "region" {
+#   default = "eu-north-1"
+# }
+#
+# variable "azs" {
+#   default = ["eu-north-1a", "eu-north-1b"]
+# }
+#
+# variable "ec2_bigip_type" {
+#   default = "c5.xlarge"
+# }
+# variable "ec2_ubuntu_type" {
+#   default = "t3.xlarge"
+# }
 
 variable "cidr" {
   default = "10.0.0.0/16"

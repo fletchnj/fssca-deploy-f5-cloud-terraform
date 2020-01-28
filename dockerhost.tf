@@ -23,7 +23,7 @@ module "dockerhost" {
 
   ami                         = data.aws_ami.latest-ubuntu-docker.id
   associate_public_ip_address = false
-  instance_type               = "t2.xlarge"
+  instance_type               = var.ec2_ubuntu_type
   root_block_device = [
       {
         volume_type = "gp2"
