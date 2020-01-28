@@ -7,11 +7,11 @@ variable "prefix" {
 }
 
 variable "region" {
-  default = "us-west-2"
+  default = "us-east-1"
 }
 
 variable "azs" {
-  default = ["us-west-2a", "us-west-2b"]
+  default = ["us-east-1a", "us-east-1b"]
 }
 
 variable "cidr" {
