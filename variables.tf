@@ -8,7 +8,7 @@ variable "prefix" {
 ## Europe Regions need oder Jumphost and BigIP Instance Typs1
 ## Uncomment needed region below
 
-# US (Oregon)
+# US West (N. California)
 variable "region" {
   default = "us-west-1"
 }
