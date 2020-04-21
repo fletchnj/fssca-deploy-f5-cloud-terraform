@@ -10,11 +10,11 @@ variable "prefix" {
 
 # US (Oregon)
 variable "region" {
-  default = "us-east-1"
+  default = "us-west-1"
 }
 
 variable "azs" {
-  default = ["us-east-1a", "us-east-1b"]
+  default = ["us-west-1a", "us-west-1b"]
 }
 
 variable "ec2_bigip_type" {
