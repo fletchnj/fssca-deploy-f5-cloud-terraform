@@ -18,9 +18,8 @@ resource "aws_secretsmanager_secret_version" "bigip-pwd" {
   secret_id     = aws_secretsmanager_secret.bigip.id
   secret_string = random_password.password.result
 }
-
-
 #
+
 # Create the BIG-IP appliances
 #
 module "bigip" {
